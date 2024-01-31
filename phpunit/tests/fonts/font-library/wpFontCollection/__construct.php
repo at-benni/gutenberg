@@ -53,7 +53,7 @@ class Tests_Fonts_WpFontCollection_Construct extends WP_UnitTestCase {
 	/**
 	 * @dataProvider data_should_do_it_wrong
 	 *
-	 * @param mixed  $config Config of the font collection.
+	 * @param mixed $config Config of the font collection.
 	 */
 	public function test_should_do_it_wrong( $config ) {
 		$this->setExpectedIncorrectUsage( 'WP_Font_Collection::is_config_valid' );

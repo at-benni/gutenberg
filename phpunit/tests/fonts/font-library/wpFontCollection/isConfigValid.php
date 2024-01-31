@@ -21,6 +21,11 @@ class Tests_Fonts_WpFontCollection_IsConfigValid extends WP_UnitTestCase {
 		$this->assertTrue( WP_Font_Collection::is_config_valid( $config ) );
 	}
 
+	/**
+	 * Data provider.
+	 *
+	 * @return array
+	 */
 	public function data_is_config_valid() {
 		return array(
 			'with src'           => array(
@@ -53,6 +58,11 @@ class Tests_Fonts_WpFontCollection_IsConfigValid extends WP_UnitTestCase {
 		$this->assertFalse( WP_Font_Collection::is_config_valid( $config ), 'Should return false if the config is not valid.' );
 	}
 
+	/**
+	 * Data provider.
+	 *
+	 * @return array
+	 */
 	public function data_is_config_valid_should_call_doing_it_wrong() {
 		return array(
 			'with missing slug'               => array(

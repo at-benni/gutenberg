@@ -49,7 +49,7 @@ class Tests_Fonts_WpFontCollection_GetContent extends WP_UnitTestCase {
 	/**
 	 * @dataProvider data_should_get_content
 	 *
-	 * @param array $config Font collection config options.
+	 * @param array $config        Font collection config options.
 	 * @param array $expected_data Expected output data.
 	 */
 	public function test_should_get_content( $config, $expected_data ) {
@@ -60,7 +60,7 @@ class Tests_Fonts_WpFontCollection_GetContent extends WP_UnitTestCase {
 	/**
 	 * Data provider.
 	 *
-	 * @return array[]
+	 * @return array
 	 */
 	public function data_should_get_content() {
 		$mock_file = wp_tempnam( 'my-collection-data-' );
